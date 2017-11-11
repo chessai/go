@@ -1,0 +1,37 @@
+---------------------------------------------------------------------
+
+name:                      go
+version:                   0.0.1
+build-type:                Simple
+cabal-version:             >= 1.10
+category:                  Games
+author:                    Daniel Cartwright
+maintainer:                dcartwright@layer3com.com
+license:                   MIT
+license-file:              LICENSE
+homepage:                  https://github.com/chessai/go
+bug-reports:               https://github.com/chessai/go/bugs
+synopsis:                  go game implementation
+description:               go game implementation
+extra-source-files:        README.md
+tested-with:               GHC == 8.2.1
+
+---------------------------------------------------------------------
+
+source-repository head
+    type:                git
+    branch:              master
+    location:            
+
+---------------------------------------------------------------------
+
+library
+    hs-source-dirs:        src
+    build-depends:         base       >= 4.9 && < 5.0
+                         , array
+    exposed-modules:       Go
+    default-language:      Haskell2010
+    other-extensions:     
+
+---------------------------------------------------------------------
+
